@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--The website adjusts itself to any device-->>
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="styles.css"> <!--Links the style sheet -->
+</head>
+<body>
+    <div class="container"> <!--Creates a container around all the text so its placed in the middle of the screen -->
+        <h1>Task Manager</h1>
+        <div class="form-group"> <!--form for the task title-->
+            <label for="taskInput">Task:</label>
+            <input type="text" id="taskInput"> <!--Assigns the task title to the json varible 'task'-->
+        </div>
+        <div class="form-group"> <!--form for the dude date-->
+            <label for="dueDate">Due Date:</label>
+            <input type="date" id="dueDate"> <!--Assigns the due date to the json varible 'task'-->
+        </div>
+        <div class="form-group"> <!--form/drop down menu for the priority level-->
+            <label for="priority">Priority:</label>
+            <select id="priority">
+                <option value="High">High</option>
+                <option value="Medium">Medium</option>
+                <option value="Low">Low</option>
+            </select>
+        </div>
+        <div class="form-group"> <!--form for the category for which the task is in, school, uni etc-->
+            <label for="categoryInput">Category:</label>
+            <input type="text" id="categoryInput"> <!--Assigns the category to the json varible 'task'-->
+        </div>
+        <button onclick="addTask()">Add Task</button> <!--button for the tasks to be added to the task list-->
+        
+        <div class="task-column"> <!--Splits the page into two bits below the task form, one side for the uncompleted tasks the other for the completed tasks-->
+            <h2>Uncompleted Tasks</h2>
+            <ul id="taskList" class="task-list"></ul>
+        </div>
+        <div class="task-column">
+            <h2>Completed Tasks</h2>
+            <ul id="completedList" class="task-list"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script> <!--Links the javascript -->
+</body>
+</html>
