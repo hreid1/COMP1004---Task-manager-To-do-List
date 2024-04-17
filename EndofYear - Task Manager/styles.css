@@ -1,11 +1,11 @@
-body {
+body { /* The background for the entire website */
   font-family: Arial, sans-serif;
   background-color: #f4f4f4;
   margin: 0;
   padding: 0;
 }
 
-.container {
+.container { /* The style/colour for the container where the tasks and task form will be located */
   width: 60%;
   margin: 50px auto;
   background-color: #fff;
@@ -14,20 +14,20 @@ body {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-h1 {
+h1 { /* Main title */
   text-align: center;
 }
 
-.form-group {
+.form-group { /* for the task form */
   margin-bottom: 15px;
 }
 
-label {
-  display: block;
+label { /* How the 'Add a new task..', 'Due date', Priority look */
+  display: block; /* Like a container/box around them for the user to input their choices */
   margin-bottom: 5px;
 }
 
-input[type="text"],
+input[type="text"], /* For the due date */
 input[type="date"],
 select {
   width: 100%;
@@ -36,7 +36,7 @@ select {
   border-radius: 4px;
 }
 
-button {
+button { /* For the 'Add task button' */
   background-color: #4CAF50;
   color: white;
   padding: 10px 20px;
@@ -45,23 +45,23 @@ button {
   cursor: pointer;
 }
 
-button:hover {
+button:hover { /* What happens when the user hovers over the add task button */
   background-color: #45a049;
 }
 
-.task-list {
+.task-list { /* How the tasks list look */
   list-style-type: none;
   padding: 0;
 }
 
-.task-list li {
+.task-list li {  /* How each individual task looks like in the task list */
   background-color: #f9f9f9;
   margin-bottom: 10px;
   padding: 10px;
   border-radius: 4px;
 }
 
-.delete-btn {
+.delete-btn { /* for the delete button */
   background-color: #f44336;
   color: white;
   padding: 5px 10px;
@@ -71,6 +71,6 @@ button:hover {
   float: right;
 }
 
-.delete-btn:hover {
+.delete-btn:hover { /* when the user hovers over the delete button */
   background-color: #da190b;
 }
